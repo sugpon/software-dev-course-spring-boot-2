@@ -1,4 +1,4 @@
-# Spring Boot Personal Library Manager
+# Spring Boot Personal Library Viewer
 
 In this exercise, you will be working with an existing Spring Boot application 
 that was created using Spring Initialzr.  This is an application for viewing a
