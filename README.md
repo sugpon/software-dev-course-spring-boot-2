@@ -25,11 +25,12 @@ You need to create a model class for representing a music album.  This class sho
 derive from the LibraryItem class and should implement the following properties
 (accessible through getters/setters):
 
-| Property | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| name     | Name of the album (inherited from the LibraryItem base class) |
-| artist   | Artist who created the album                                  |
-| tracks   | Year that the album was released                              |
+| Property | Description                                                                  |
+| -------- |------------------------------------------------------------------------------|
+| name     | Name of the album (inherited from the LibraryItem base class)                |
+| artist   | Artist who created the album                                                 |
+| year     | Year that the album was released (inherited from the LibraryItem base class) |
+| tracks   | Track Count                                                                  |
 
 You can look to the book class as an example.
 
@@ -45,12 +46,12 @@ You need to create a model class for representing a movie.  This class should
 derive from the LibraryItem class and should implement the following properties
 (accessible through getters/setters):
 
-| Property | Description                                                   |
-| -------- | ------------------------------------------------------------- |
-| name     | Name of the movie (inherited from the LibraryItem base class) |
-| director | Director of the movie                                         |
-| year     | Year that the movie was released                              |
-| runtime  | Runtime (in minutes) of the movie                             |
+| Property | Description                                                                   |
+| -------- |-------------------------------------------------------------------------------|
+| name     | Name of the movie (inherited from the LibraryItem base class)                 |
+| director | Director of the movie                                                         |
+| year     | Year that the movie was released (inherited from the LibraryItem base class)  |
+| runtime  | Runtime (in minutes) of the movie                                             |
 
 You can look to the book class as an example.
 
