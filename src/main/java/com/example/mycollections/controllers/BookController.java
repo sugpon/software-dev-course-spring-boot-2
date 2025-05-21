@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/books")
 public class BookController {
 
-    private List<Book> books = new ArrayList<>() {{
+    private final List<Book> books = new ArrayList<>() {{
         add(new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925, 180));
         add(new Book("To Kill a Mockingbird", "Harper Lee", 1960, 281));
         add(new Book("1984", "George Orwell", 1949, 328));
@@ -23,14 +23,19 @@ public class BookController {
 
     @GetMapping("/html")
     public String getBooksHtml() {
+        String bookList = "<ul>";
+        for (Book book : books) {
+            bookList += "<li>" + book + "</li>";
+        }
+        bookList += "</ul>";
+
         return """
                 <html>
                     <body>
                         <h1>Books</h1>
                         <ul>
-                            """
-                + books.stream()
-                        .map(book -> "<li>" + book + "</li>m") + 
+                """ +
+                bookList + 
                 """
                         </ul>
                     </body>
