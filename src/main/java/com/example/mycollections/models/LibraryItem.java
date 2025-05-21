@@ -1,8 +1,8 @@
 package com.example.mycollections.models;
 
 public class LibraryItem {
-    private String name;
-    private int year;
+    protected String name;
+    protected int year;
 
     public LibraryItem(String name, int year) {
         this.name = name;
