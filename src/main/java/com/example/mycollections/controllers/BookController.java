@@ -33,11 +33,11 @@ public class BookController {
                 <html>
                     <body>
                         <h1>Books</h1>
-                        <ul>
+                      
                 """ +
                 bookList + 
                 """
-                        </ul>
+                       
                     </body>
                 """;
     }
